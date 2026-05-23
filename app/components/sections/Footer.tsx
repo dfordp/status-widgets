@@ -14,7 +14,7 @@ export function Footer() {
             </span>
             <span className="text-muted-foreground/40 text-xs ml-1">·</span>
             <span className="text-xs text-muted-foreground/60">
-              Built for modern reliability UX
+              Build apps that adapt gracefully to outages.
             </span>
           </div>
 
