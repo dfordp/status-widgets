@@ -15,21 +15,21 @@ const categories = [
   "Runtime reliability layer",
 ];
 
-const tools = [
-    {
-    name: "Status Widgets",
-    category: "Runtime reliability layer",
-    description: "Embedded adaptive UI that responds to live provider state.",
-    scores: [true, true, true, true, true, true, true, true],
-    muted: false,
-    highlight: true,
-  },
+const tools: {
+  name: string;
+  category: string;
+  description: string;
+  scores: (boolean | null)[];
+  muted: boolean;
+  highlight: boolean;
+}[] = [
   {
     name: "Statuspage",
     category: "External status page",
     description: "Incident communication for customers and stakeholders.",
     scores: [false, false, false, null, false, false, false, false],
     muted: true,
+    highlight: false,
   },
   {
     name: "Instatus",
@@ -37,6 +37,7 @@ const tools = [
     description: "Beautiful hosted status pages with subscriber notifications.",
     scores: [false, false, false, null, false, false, false, false],
     muted: true,
+    highlight: false,
   },
   {
     name: "Better Stack",
@@ -44,6 +45,15 @@ const tools = [
     description: "Uptime monitoring, incident management, and status pages.",
     scores: [false, false, false, null, false, false, false, false],
     muted: true,
+    highlight: false,
+  },
+  {
+    name: "Status Widgets",
+    category: "Runtime reliability layer",
+    description: "Embedded adaptive UI that responds to live provider state.",
+    scores: [true, true, true, true, true, true, true, true],
+    muted: false,
+    highlight: true,
   },
 ];
 
